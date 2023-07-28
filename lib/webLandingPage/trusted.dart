@@ -17,11 +17,11 @@ class Trusted extends StatelessWidget {
           Container(
             height: 500.h,
             width: double.infinity,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
                 gradient:
                     LinearGradient(colors: [Colors.black38, Colors.black45])),
             child: Image.asset(
-              "country/trustedby.jpeg",
+              "assets/trustedby.jpeg",
               fit: BoxFit.fitWidth,
             ),
           ),

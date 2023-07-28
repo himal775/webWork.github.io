@@ -4,7 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class TestimonialPage extends StatelessWidget {
   TestimonialPage({super.key});
-  final image1 = Image.asset("country/testimony4.jpg");
+  final image1 = Image.asset("assets/testimony4.jpg");
 
   @override
   Widget build(BuildContext context) {
@@ -65,14 +65,14 @@ class TestimonialPage extends StatelessWidget {
                   children: [
                     ClipOval(
                       child: Image.asset(
-                        'country/testimony3.jpg',
+                        'assets/sumanPokharel.jpeg',
                         width: 40.w,
                         height: 150.h,
                         fit: BoxFit.cover,
                       ),
                     ),
                     Text(
-                      "Mr. Himal Neupane",
+                      "Mr. Suman Pokharel",
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 18,
@@ -103,22 +103,18 @@ class TestimonialPage extends StatelessWidget {
                   children: [
                     ClipOval(
                       child: Image.asset(
-                        'country/testimony3.jpg',
+                        'assets/testimony3.jpg',
                         width: 40.w,
                         height: 150.h,
                         fit: BoxFit.cover,
                       ),
                     ),
                     Text(
-                      "Mr. Nabin Tandukar",
+                      "Mr. Himal Neupane",
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 18,
                           color: colors),
-                    ),
-                    Text(
-                      "Senior Counselor",
-                      style: TextStyle(fontSize: 18, color: colors),
                     ),
                     const Padding(
                       padding: EdgeInsets.all(8.0),
@@ -148,14 +144,14 @@ class TestimonialPage extends StatelessWidget {
                   children: [
                     ClipOval(
                       child: Image.asset(
-                        'country/testimony3.jpg',
+                        'assets/testimony2.jpg',
                         width: 40.w,
                         height: 150.h,
                         fit: BoxFit.cover,
                       ),
                     ),
                     Text(
-                      "Mr. Himal Neupane",
+                      "Mr. Nabin Tandukar",
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 18,

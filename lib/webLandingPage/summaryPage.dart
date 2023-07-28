@@ -12,18 +12,18 @@ class SummaryPage extends StatelessWidget {
     return Stack(
       children: [
         Container(
-          height: 550.h,
+          height: 520.h,
           width: double.infinity,
           decoration: BoxDecoration(
               gradient: LinearGradient(
                   colors: [Colors.blue, Colors.blue.withOpacity(0)])),
           child: Image.asset(
-            "eduviceHomePage.jpg",
+            "assets/eduviceHomePage.jpg",
             fit: BoxFit.fill,
           ),
         ),
         Container(
-          height: 550.h,
+          height: 520.h,
           width: double.infinity,
           decoration: BoxDecoration(
               gradient:
@@ -38,29 +38,38 @@ class SummaryPage extends StatelessWidget {
                   SizedBox(
                     height: 30.h,
                   ),
-                  Text(
-                    "Grab an",
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 42.sp,
-                        fontFamily: "Work Sans"),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                      "Grab an",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 42.sp,
+                          fontFamily: "Work Sans"),
+                    ),
                   ),
-                  Text(
-                    "Opportunity to",
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 42.sp,
-                        fontFamily: "Work Sans"),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                      "Opportunity to",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 42.sp,
+                          fontFamily: "Work Sans"),
+                    ),
                   ),
-                  Text(
-                    "Secure your Future",
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 42.sp,
-                        fontFamily: "Work Sans"),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                      "Secure your Future",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 42.sp,
+                          fontFamily: "Work Sans"),
+                    ),
                   ),
                 ],
               ),

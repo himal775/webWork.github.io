@@ -20,43 +20,49 @@ class Playstore extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
+                Container(
+                  width: 150.w,
                   child: Text(
                     "In All Platform",
+                    textAlign: TextAlign.end,
                     style: TextStyle(
                         color: Colors.white,
                         fontFamily: "Work Sans",
                         fontSize: 22.sp),
                   ),
                 ),
-                Text(
-                  "Discover a universe of possibilities ",
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                      fontFamily: "Work Sans",
-                      fontSize: 28.sp),
+                Container(
+                  width: 150.w,
+                  child: Text(
+                    "Discover a universe of possibilities ",
+                    textAlign: TextAlign.end,
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                        fontFamily: "Work Sans",
+                        fontSize: 28.sp),
+                  ),
                 ),
+                // Container(
+                //   width: 100.w,
+                //   child: Text(
+                //     textAlign: TextAlign.end,
+                //     "Download from the mobile store and unlock a plethora of apps tailor-made for your Android device.",
+                //     style: TextStyle(
+                //         fontFamily: "Work Sans",
+                //         color: Colors.white,
+                //         fontSize: 18.sp),
+                //   ),
+                // ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Container(
-                    width: 100.w,
-                    child: Text(
-                      "Download from the mobile store and unlock a plethora of apps tailor-made for your Android device.",
-                      style: TextStyle(
-                          fontFamily: "Work Sans",
-                          color: Colors.white,
-                          fontSize: 18.sp),
+                    height: 100.h,
+                    width: 150.w,
+                    child: Image.asset(
+                      "assets/bothplayandappstore.png",
+                      fit: BoxFit.contain,
                     ),
-                  ),
-                ),
-                Container(
-                  height: 100.h,
-                  width: 150.w,
-                  child: Image.asset(
-                    "country/bothplayandappstore.png",
-                    fit: BoxFit.contain,
                   ),
                 )
               ],

@@ -21,10 +21,10 @@ class _PopularDestinationsState extends State<PopularDestinations> {
     'United Kingdom',
   ];
   List<String> images = [
-    'country/newyork.jpg',
-    'country/australia.jpeg',
-    'country/canada.jpg',
-    'country/UK.jpeg'
+    'assets/newyork.jpg',
+    'assets/australia.jpeg',
+    'assets/canada.jpg',
+    'assets/UK.jpeg'
   ];
   List<String> aboutCountry = [
     "The US is home to the highest number of international students in the world. With famous cities, epic landscapes, high-ranked universities and vibrant exciting campus life, studying in the US offers the perfect blend of educational quality and cultural experience",
@@ -36,7 +36,7 @@ class _PopularDestinationsState extends State<PopularDestinations> {
   Widget build(BuildContext context) {
     return Container(
         color: Colors.white,
-        height: 500.h,
+        height: 400.h,
         child: Column(
           children: [
             SizedBox(
@@ -47,13 +47,16 @@ class _PopularDestinationsState extends State<PopularDestinations> {
                 SizedBox(
                   width: 10.w,
                 ),
-                const Text(
-                  "Popular Destination",
-                  style: TextStyle(
-                      color: Colors.green,
-                      fontFamily: "Work Sans",
-                      fontSize: 36,
-                      fontWeight: FontWeight.bold),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: const Text(
+                    "Popular Destination",
+                    style: TextStyle(
+                        color: Colors.green,
+                        fontFamily: "Work Sans",
+                        fontSize: 36,
+                        fontWeight: FontWeight.bold),
+                  ),
                 ),
               ],
             ),
@@ -62,9 +65,12 @@ class _PopularDestinationsState extends State<PopularDestinations> {
                 SizedBox(
                   width: 10.w,
                 ),
-                const Text(
-                  "Your study abroad journey will undoubtedly be a transformative and enriching experience.",
-                  style: TextStyle(fontSize: 22, color: Colors.black87),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: const Text(
+                    "Your study abroad journey will undoubtedly be a transformative and enriching experience.",
+                    style: TextStyle(fontSize: 22, color: Colors.black87),
+                  ),
                 ),
               ],
             ),
@@ -87,14 +93,14 @@ class _PopularDestinationsState extends State<PopularDestinations> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Container(
                           height: 250.h,
                           width: 200.w,
                           child: Image.asset(
                             images[currentInt],
-                            fit: BoxFit.contain,
+                            fit: BoxFit.fitWidth,
                           )),
                       Container(
                         width: 100.w,
@@ -133,7 +139,7 @@ class _PopularDestinationsState extends State<PopularDestinations> {
             autoPlay: true,
             scrollDirection: Axis.horizontal,
             height: 260.h,
-            autoPlayInterval: const Duration(seconds: 5),
+            autoPlayInterval: const Duration(seconds: 3),
             viewportFraction: 1));
   }
 }
