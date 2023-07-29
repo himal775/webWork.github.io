@@ -30,7 +30,7 @@ class _TopBarState extends State<TopBar> {
                     SizedBox(
                       width: 10.w,
                     ),
-                    Icon(
+                    const Icon(
                       Icons.mail,
                       color: Colors.white,
                     ),
@@ -98,71 +98,6 @@ class _TopBarState extends State<TopBar> {
                     ],
                   ),
                 ),
-                // Row(
-                //   children: [
-
-                //     // Container(
-                //     //   height: 7.5.w,
-                //     //   width: 70.w,
-                //     //   decoration: BoxDecoration(
-                //     //       color: Colors.white,
-                //     //       borderRadius: BorderRadius.circular(20)),
-                //     //   child: Center(
-                //     //     child: TextFormField(
-                //     //       decoration: InputDecoration(
-                //     //           contentPadding: EdgeInsets.all(8.0),
-                //     //           border: InputBorder.none,
-                //     //           prefixIcon: Icon(Icons.search),
-                //     //           hintText: "Search university or courses",
-                //     //           hintStyle: TextStyle(
-                //     //               fontFamily: "Work Sans", fontSize: 16.sp)),
-                //     //     ),
-                //     //   ),
-                //     // ),
-                //     SizedBox(
-                //       width: 10.w,
-                //     ),
-                //     // Container(
-                //     //   child: Row(
-                //     //     children: [
-                //     //       Container(
-                //     //         height: 25.h,
-                //     //         width: 25.w,
-                //     //         decoration: BoxDecoration(
-                //     //             color: Colors.white,
-                //     //             borderRadius: BorderRadius.circular(5)),
-                //     //         child: Center(
-                //     //           child: Text(
-                //     //             "SignUp",
-                //     //             style: TextStyle(
-                //     //                 fontSize: 14.sp,
-                //     //                 color: secondColor,
-                //     //                 fontFamily: "Work Sans"),
-                //     //           ),
-                //     //         ),
-                //     //       ),
-                //     //       SizedBox(width: 1.w),
-                //     //       Container(
-                //     //         height: 25.h,
-                //     //         width: 25.w,
-                //     //         decoration: BoxDecoration(
-                //     //             color: Colors.white,
-                //     //             borderRadius: BorderRadius.circular(5)),
-                //     //         child: Center(
-                //     //           child: Text(
-                //     //             "Sign in",
-                //     //             style: TextStyle(
-                //     //                 fontSize: 14.sp,
-                //     //                 color: secondColor,
-                //     //                 fontFamily: "Work Sans"),
-                //     //           ),
-                //     //         ),
-                //     //       )
-                //     //     ],
-                //     //   ),
-                //     // ),
-                //   ],
-                // ),
               ],
             ),
           ),
@@ -187,7 +122,7 @@ class _TopBarState extends State<TopBar> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Row(
-                      children: [
+                      children: const [
                         Text(
                           "About Us",
                           style: TextStyle(
@@ -200,7 +135,7 @@ class _TopBarState extends State<TopBar> {
                       ],
                     ),
                     Row(
-                      children: [
+                      children: const [
                         Text(
                           "Study Abroad",
                           style: TextStyle(
@@ -213,7 +148,7 @@ class _TopBarState extends State<TopBar> {
                       ],
                     ),
                     Row(
-                      children: [
+                      children: const [
                         Text(
                           "Services",
                           style: TextStyle(
@@ -226,7 +161,7 @@ class _TopBarState extends State<TopBar> {
                       ],
                     ),
                     Row(
-                      children: [
+                      children: const [
                         Text(
                           "Popular Course",
                           style: TextStyle(
@@ -238,24 +173,22 @@ class _TopBarState extends State<TopBar> {
                         )
                       ],
                     ),
-                    Text(
+                    const Text(
                       "Blog",
                       style: TextStyle(
                           color: Colors.white, fontFamily: "Work Sans"),
                     ),
-
-                    Text(
+                    const Text(
                       "Contact Us",
                       style: TextStyle(
                           color: Colors.white, fontFamily: "Work Sans"),
                     ),
-
                     Container(
                       height: 20.h,
                       width: 20.w,
                       decoration: BoxDecoration(
                           color: colors,
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(
                                 color: Colors.white,
                                 blurRadius: 1,
@@ -272,47 +205,6 @@ class _TopBarState extends State<TopBar> {
                         ),
                       ),
                     ),
-                    // Container(
-                    //   height: 25.h,
-                    //   width: 25.w,
-                    //   decoration: BoxDecoration(
-                    //       color: colors,
-                    //       boxShadow: const [
-                    //         BoxShadow(
-                    //             color: Colors.white,
-                    //             blurRadius: 1,
-                    //             spreadRadius: 1)
-                    //       ],
-                    //       borderRadius: BorderRadius.circular(5)),
-                    //   child: Center(
-                    //     child: Text(
-                    //       "Register",
-                    //       style: TextStyle(
-                    //           fontSize: 14.sp,
-                    //           color: Colors.white,
-                    //           fontFamily: "Work Sans"),
-                    //     ),
-                    //   ),
-                    // ),
-                    // Container(
-                    //   child: Row(
-                    //     children: [
-                    //       Container(
-                    //         height: 25.h,
-                    //         width: 25.w,
-                    //         decoration: BoxDecoration(
-                    //             color: Colors.white,
-                    //             borderRadius: BorderRadius.circular(5)),
-                    //         child: Center(
-                    //           child: Text(
-                    //             "SignUp",
-                    //             style: TextStyle(
-                    //                 fontSize: 14.sp,
-                    //                 color: secondColor,
-                    //                 fontFamily: "Work Sans"),
-                    //           ),
-                    //         ),
-                    //       ),
                   ],
                 ),
               )

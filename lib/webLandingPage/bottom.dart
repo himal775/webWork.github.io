@@ -46,13 +46,13 @@ class BottomPage extends StatelessWidget {
                       icon: Icon(EvaIcons.twitter, color: Colors.white)),
                   IconButton(
                       onPressed: () {},
-                      icon: Icon(
+                      icon: const Icon(
                         EvaIcons.google,
                         color: Colors.white,
                       )),
                   IconButton(
                       onPressed: () {},
-                      icon: Icon(
+                      icon: const Icon(
                         EvaIcons.linkedin,
                         color: Colors.white,
                       )),
@@ -221,7 +221,7 @@ class BottomPage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(
+                  const Icon(
                     Icons.call,
                     color: Colors.white,
                   ),
@@ -242,7 +242,7 @@ class BottomPage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(
+                  const Icon(
                     Icons.email,
                     color: Colors.white,
                   ),
@@ -263,7 +263,7 @@ class BottomPage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(
+                  const Icon(
                     Icons.web,
                     color: Colors.white,
                   ),
@@ -284,7 +284,7 @@ class BottomPage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(
+                  const Icon(
                     Icons.location_pin,
                     color: Colors.white,
                   ),

@@ -1,25 +1,25 @@
 import 'package:eduvice/constant.dart';
-import 'package:eduvice/landingPage/TestimonialPage.dart';
-import 'package:eduvice/landingPage/bottom.dart';
-import 'package:eduvice/landingPage/counselling.dart';
-import 'package:eduvice/landingPage/getInTouch.dart';
-import 'package:eduvice/landingPage/getOnPlayStore.dart';
-import 'package:eduvice/landingPage/ourService.dart';
-import 'package:eduvice/landingPage/popularDestination.dart';
-import 'package:eduvice/landingPage/scholarship.dart';
-import 'package:eduvice/landingPage/summaryPage.dart';
-import 'package:eduvice/landingPage/topBar.dart';
-import 'package:eduvice/landingPage/trusted.dart';
+import 'package:eduvice/webLandingPage/TestimonialPage.dart';
+import 'package:eduvice/webLandingPage/bottom.dart';
+import 'package:eduvice/webLandingPage/counselling.dart';
+import 'package:eduvice/webLandingPage/getInTouch.dart';
+import 'package:eduvice/webLandingPage/getOnPlayStore.dart';
+import 'package:eduvice/webLandingPage/ourService.dart';
+import 'package:eduvice/webLandingPage/popularDestination.dart';
+import 'package:eduvice/webLandingPage/scholarship.dart';
+import 'package:eduvice/webLandingPage/summaryPage.dart';
+import 'package:eduvice/webLandingPage/topBar.dart';
+import 'package:eduvice/webLandingPage/trusted.dart';
 import 'package:flutter/material.dart';
 
-class LandingPage extends StatefulWidget {
-  const LandingPage({super.key});
+class webLandingPage extends StatefulWidget {
+  const webLandingPage({super.key});
 
   @override
-  State<LandingPage> createState() => _LandingPageState();
+  State<webLandingPage> createState() => _webLandingPageState();
 }
 
-class _LandingPageState extends State<LandingPage> {
+class _webLandingPageState extends State<webLandingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -3,14 +3,14 @@ import 'package:eduvice/constant.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class PopularDestinations extends StatefulWidget {
-  const PopularDestinations({super.key});
+class MobPopularDestinations extends StatefulWidget {
+  const MobPopularDestinations({super.key});
 
   @override
-  State<PopularDestinations> createState() => _PopularDestinationsState();
+  State<MobPopularDestinations> createState() => _MobPopularDestinationsState();
 }
 
-class _PopularDestinationsState extends State<PopularDestinations> {
+class _MobPopularDestinationsState extends State<MobPopularDestinations> {
   @override
   List<String> countries = [
     'United States of America',
@@ -45,35 +45,29 @@ class _PopularDestinationsState extends State<PopularDestinations> {
                 SizedBox(
                   width: 10.w,
                 ),
-                const Padding(
-                  padding: EdgeInsets.all(8.0),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
                   child: Text(
                     "Popular Destination",
                     style: TextStyle(
                         color: Colors.green,
                         fontFamily: "Work Sans",
-                        fontSize: 36,
+                        fontSize: 28.sp,
                         fontWeight: FontWeight.bold),
                   ),
                 ),
               ],
             ),
-            Row(
-              children: [
-                SizedBox(
-                  width: 10.w,
+            Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Container(
+                height: 40.h,
+                width: double.infinity,
+                child: Text(
+                  "Your study abroad journey will undoubtedly be a transformative and enriching experience.",
+                  style: TextStyle(fontSize: 16.sp, color: Colors.black87),
                 ),
-                Padding(
-                  padding: EdgeInsets.all(8.0),
-                  child: Container(
-                    height: 30.h,
-                    child: Text(
-                      "Your study abroad journey will undoubtedly be a transformative and enriching experience.",
-                      style: TextStyle(fontSize: 22.sp, color: Colors.black87),
-                    ),
-                  ),
-                ),
-              ],
+              ),
             ),
             SizedBox(
               height: 10.h,
