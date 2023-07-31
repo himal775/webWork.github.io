@@ -1,5 +1,3 @@
-import 'package:eduvice/mobLandingPage/mobLandingPage.dart';
-import 'package:eduvice/timerPage.dart';
 import 'package:eduvice/widget/responsiveness.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -32,7 +30,7 @@ class MyApp extends StatelessWidget {
         splitScreenMode: true,
         builder: (context, child) {
           return MaterialApp(
-            title: 'Flutter Demo',
+            title: 'eduvice',
             debugShowCheckedModeBanner: false,
             theme: ThemeData(
               primarySwatch: Colors.blue,

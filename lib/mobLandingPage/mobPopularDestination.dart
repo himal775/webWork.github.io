@@ -34,7 +34,7 @@ class _MobPopularDestinationsState extends State<MobPopularDestinations> {
   Widget build(BuildContext context) {
     return Container(
         color: Colors.white,
-        height: 400.h,
+        height: 900.h,
         child: Column(
           children: [
             SizedBox(
@@ -83,40 +83,41 @@ class _MobPopularDestinationsState extends State<MobPopularDestinations> {
           return InkWell(
             onTap: () {},
             child: Container(
-              height: 400.h,
+              height: 500.h,
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Container(
-                          height: 250.h,
-                          width: 200.w,
-                          child: Image.asset(
-                            images[currentInt],
-                            fit: BoxFit.fitWidth,
-                          )),
-                      Container(
-                        width: 100.w,
-                        child: Column(
-                          children: [
-                            Text(
-                              "Study in ${countries[currentInt]}",
-                              style: TextStyle(
-                                  fontSize: 28.sp,
-                                  color: colors,
-                                  fontFamily: "Work Sans"),
-                              textAlign: TextAlign.center,
-                            ),
-                            SizedBox(
-                              height: 10.h,
-                            ),
-                            Text("""${aboutCountry[currentInt]}""")
-                          ],
+                  Container(
+                      height: 250.h,
+                      width: 300.w,
+                      child: Image.asset(
+                        images[currentInt],
+                        fit: BoxFit.fitWidth,
+                      )),
+                  Container(
+                    width: double.infinity,
+                    child: Column(
+                      children: [
+                        Text(
+                          "Study in ${countries[currentInt]}",
+                          style: TextStyle(
+                              fontSize: 28.sp,
+                              color: colors,
+                              fontFamily: "Work Sans"),
+                          textAlign: TextAlign.center,
                         ),
-                      ),
-                    ],
+                        SizedBox(
+                          height: 10.h,
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Text(
+                            """${aboutCountry[currentInt]}""",
+                            style: TextStyle(fontFamily: "Work Sans"),
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                 ],
               ),
@@ -133,7 +134,7 @@ class _MobPopularDestinationsState extends State<MobPopularDestinations> {
             enlargeCenterPage: true,
             autoPlay: true,
             scrollDirection: Axis.horizontal,
-            height: 260.h,
+            height: 500.h,
             autoPlayInterval: const Duration(seconds: 3),
             viewportFraction: 1));
   }

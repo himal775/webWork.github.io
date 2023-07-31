@@ -1,4 +1,5 @@
 import 'package:eduvice/constant.dart';
+import 'package:eduvice/mobLandingPage/mobBottomPage.dart';
 import 'package:eduvice/mobLandingPage/mobCounsellingPage.dart';
 import 'package:eduvice/mobLandingPage/mobGetInTouch.dart';
 import 'package:eduvice/mobLandingPage/mobPopularDestination.dart';
@@ -47,7 +48,7 @@ class MobLandingPage extends StatelessWidget {
           MobScholarship(),
           MobTestimonialPage(),
           Playstore(),
-          BottomPage(),
+          MobBottomPage(),
         ],
       ),
     );
