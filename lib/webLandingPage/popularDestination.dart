@@ -69,7 +69,7 @@ class _PopularDestinationsState extends State<PopularDestinations> {
                     height: 30.h,
                     child: Text(
                       "Your study abroad journey will undoubtedly be a transformative and enriching experience.",
-                      style: TextStyle(fontSize: 22.sp, color: Colors.black87),
+                      style: TextStyle(fontSize: 16.sp, color: Colors.black87),
                     ),
                   ),
                 ),

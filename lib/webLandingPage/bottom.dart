@@ -252,7 +252,7 @@ class BottomPage extends StatelessWidget {
                   Container(
                       width: 50.w,
                       child: Text(
-                        "info@eduvice.co.uk",
+                        "info@eduvice.co.in",
                         style: TextStyle(color: secondColor),
                       ))
                 ],
@@ -273,7 +273,7 @@ class BottomPage extends StatelessWidget {
                   Container(
                       width: 50.w,
                       child: Text(
-                        "eduvice.co.uk",
+                        "eduvice.co.in",
                         style: TextStyle(color: secondColor),
                       ))
                 ],

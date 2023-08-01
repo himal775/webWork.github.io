@@ -44,7 +44,7 @@ class _GetInTouchState extends State<GetInTouch> {
           ),
           Text(
             "We value your inquiry and get in touch with you.",
-            style: TextStyle(fontSize: 22.sp, color: Colors.black87),
+            style: TextStyle(fontSize: 16.sp, color: Colors.black87),
           ),
           SizedBox(
             height: 20.h,

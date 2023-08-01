@@ -38,7 +38,7 @@ class _TopBarState extends State<TopBar> {
                       width: 2.w,
                     ),
                     Text(
-                      "info@eduvice.co.uk",
+                      "info@eduvice.co.in",
                       style: TextStyle(
                           fontSize: 15.sp,
                           color: Colors.white,
@@ -55,7 +55,7 @@ class _TopBarState extends State<TopBar> {
                       width: 2.w,
                     ),
                     Text(
-                      "+44 7436 966618",
+                      "9953168800",
                       style: TextStyle(
                           fontSize: 15.sp,
                           color: Colors.white,
@@ -64,7 +64,7 @@ class _TopBarState extends State<TopBar> {
                   ]),
                 ),
                 Container(
-                  width: 50.w,
+                  // width: 50.w,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
