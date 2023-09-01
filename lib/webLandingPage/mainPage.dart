@@ -7,10 +7,12 @@ import 'package:eduvice/webLandingPage/getOnPlayStore.dart';
 import 'package:eduvice/webLandingPage/ourService.dart';
 import 'package:eduvice/webLandingPage/popularDestination.dart';
 import 'package:eduvice/webLandingPage/scholarship.dart';
+import 'package:eduvice/webLandingPage/studyCourses.dart';
 import 'package:eduvice/webLandingPage/summaryPage.dart';
 import 'package:eduvice/webLandingPage/appBar.dart';
 import 'package:eduvice/webLandingPage/topBar.dart';
 import 'package:eduvice/webLandingPage/trusted.dart';
+import 'package:eduvice/webLandingPage/whyEduvice.dart';
 import 'package:flutter/material.dart';
 
 class webLandingPage extends StatefulWidget {
@@ -33,10 +35,13 @@ class _webLandingPageState extends State<webLandingPage> {
           CounsellingPage(),
           OurService(),
           Trusted(),
-          GetInTouch(),
-          Scholarship(),
-          TestimonialPage(),
-          Playstore(),
+          WhyEduvice(),
+          StudyCourses(),
+
+          // GetInTouch(),
+          // Scholarship(),
+          // TestimonialPage(),
+          // Playstore(),
           BottomPage(),
         ],
       ),

@@ -9,7 +9,7 @@ class BottomPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 200.h,
+      height: 300.h,
       width: double.infinity,
       color: colors,
       child: Row(

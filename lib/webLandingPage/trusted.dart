@@ -71,20 +71,43 @@ class Trusted extends StatelessWidget {
                   ),
                 ],
               ),
+
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  Icon(
-                    Icons.keyboard_arrow_left_outlined,
-                    size: 38,
+                  Column(
+                    children: [
+                      Text(
+                        "View All",
+                        style: TextStyle(
+                            fontFamily: "Work Sans",
+                            fontSize: 18.sp,
+                            fontWeight: FontWeight.bold),
+                      ),
+                      SizedBox(
+                        height: 5.h,
+                      ),
+                      Container(
+                        height: 5.h,
+                        width: 20.w,
+                        color: Colors.black,
+                      )
+                    ],
                   ),
                   SizedBox(
                     width: 10.w,
-                  ),
-                  Icon(
-                    Icons.keyboard_arrow_right_outlined,
-                    size: 38,
-                  ),
+                  )
+                  // Icon(
+                  //   Icons.keyboard_arrow_left_outlined,
+                  //   size: 38,
+                  // ),
+                  // SizedBox(
+                  //   width: 10.w,
+                  // ),
+                  // Icon(
+                  //   Icons.keyboard_arrow_right_outlined,
+                  //   size: 38,
+                  // ),
                 ],
               ),
               Row(
