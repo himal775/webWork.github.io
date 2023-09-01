@@ -200,7 +200,7 @@ class MobBottomPage extends StatelessWidget {
                   Container(
                       width: 100.w,
                       child: Text(
-                        "info@eduvice.co.uk",
+                        "info@eduvice.co.in",
                         style: TextStyle(color: secondColor),
                       ))
                 ],
@@ -221,7 +221,7 @@ class MobBottomPage extends StatelessWidget {
                   Container(
                       width: 100.w,
                       child: Text(
-                        "eduvice.co.uk",
+                        "eduvice.co.in",
                         style: TextStyle(color: secondColor),
                       ))
                 ],
@@ -269,7 +269,7 @@ class MobBottomPage extends StatelessWidget {
                     child: Center(
                       child: IconButton(
                           onPressed: () {},
-                          icon: Icon(
+                          icon: const Icon(
                             EvaIcons.facebook,
                             color: Colors.white,
                           )),

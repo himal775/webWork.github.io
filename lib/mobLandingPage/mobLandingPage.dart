@@ -46,7 +46,7 @@ class MobLandingPage extends StatelessWidget {
           MobTrusted(),
           MobGetInTouch(),
           MobScholarship(),
-          MobTestimonialPage(),
+          Expanded(flex: 1, child: MobTestimonialPage()),
           Playstore(),
           MobBottomPage(),
         ],
@@ -74,7 +74,7 @@ Widget mobTopBar(context) {
             width: 2.h,
           ),
           Text(
-            "info@eduvice.co.uk",
+            "info@eduvice.co.in",
             style: TextStyle(
                 fontSize: 15.sp, color: Colors.white, fontFamily: "Work Sans"),
           ),
@@ -94,7 +94,7 @@ Widget mobTopBar(context) {
             width: 2.w,
           ),
           Text(
-            "+44 7436 966618",
+            "9953168800",
             style: TextStyle(
                 fontSize: 15.sp, color: Colors.white, fontFamily: "Work Sans"),
           ),

@@ -24,7 +24,7 @@ class BottomPage extends StatelessWidget {
                 height: 100.h,
                 width: 50.w,
                 child: Image.asset(
-                  "assets/eduviceIcon.jpg",
+                  "assets/eduviceIcon.png",
                 ),
               ),
               Row(

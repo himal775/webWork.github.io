@@ -23,7 +23,7 @@ class MobScholarship extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                "Searching for MobScholarship?",
+                "Searching for Scholarship?",
                 style: TextStyle(
                     fontFamily: "Work Sans",
                     fontSize: 14.sp,
@@ -38,7 +38,7 @@ class MobScholarship extends StatelessWidget {
                     fontWeight: FontWeight.bold),
               ),
               Text(
-                "Famous MobScholarship ",
+                "Famous Scholarship ",
                 style: TextStyle(
                     fontFamily: "Work Sans",
                     fontSize: 20.sp,

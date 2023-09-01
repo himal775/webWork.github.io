@@ -1,5 +1,5 @@
 import 'package:eduvice/mobLandingPage/mobLandingPage.dart';
-import 'package:eduvice/webLandingPage/landingPage.dart';
+import 'package:eduvice/webLandingPage/mainPage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 

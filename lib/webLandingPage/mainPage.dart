@@ -8,6 +8,7 @@ import 'package:eduvice/webLandingPage/ourService.dart';
 import 'package:eduvice/webLandingPage/popularDestination.dart';
 import 'package:eduvice/webLandingPage/scholarship.dart';
 import 'package:eduvice/webLandingPage/summaryPage.dart';
+import 'package:eduvice/webLandingPage/appBar.dart';
 import 'package:eduvice/webLandingPage/topBar.dart';
 import 'package:eduvice/webLandingPage/trusted.dart';
 import 'package:flutter/material.dart';
@@ -26,7 +27,7 @@ class _webLandingPageState extends State<webLandingPage> {
       appBar: null,
       body: ListView(
         children: [
-          TopBar(),
+          TopAppBar(),
           SummaryPage(),
           PopularDestinations(),
           CounsellingPage(),

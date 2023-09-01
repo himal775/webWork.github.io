@@ -1,261 +1,221 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:eduvice/constant.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class OurService extends StatelessWidget {
+class OurService extends StatefulWidget {
   const OurService({super.key});
 
   @override
+  State<OurService> createState() => _OurServiceState();
+}
+
+class _OurServiceState extends State<OurService> {
+  //  List<String> countries = [
+  //   'United States of America',
+  //   'Australia',
+  //   'Canada',
+  //   'United Kingdom',
+  // ];
+  List<String> images = [
+    'assets/trustedby.jpeg',
+    'assets/gettouch.jpg',
+    'assets/testimony2.jpg',
+  ];
+  List<String> imagess = [
+    'assets/gettouch.jpg',
+    'assets/testimony2.jpg',
+    'assets/trustedby.jpeg',
+  ];
+  int indexx = 0;
+  // List<String> aboutCountry = [
+  //   "The US is home to the highest number of international students in the world. With famous cities, epic landscapes, high-ranked universities and vibrant exciting campus life, studying in the US offers the perfect blend of educational quality and cultural experience",
+  //   "Whether you choose to undertake an MBA, engineering degree, humanities or English language course, Australia is difficult to beat in terms of standard of living, academic excellence, and support for international students",
+  //   "Academic excellence, affordability and adventure – Canada stands out as an ideal place to study.",
+  //   "Home to some of the world’s greatest cities, the United Kingdom offers world-class education with a diverse and flexible range of courses. Besides, it is one of the most popular cultural hubs of Europe with a rich history to be proud of."
+  // ];
+
   Widget build(BuildContext context) {
     return Container(
-      height: 520.h,
-      width: double.infinity,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        color: Colors.white,
+        height: 650.h,
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            children: [
+              SizedBox(
+                height: 10.h,
+              ),
+              Row(
+                children: [
+                  SizedBox(
+                    width: 20.w,
+                  ),
+                  Text(
+                    "Scholarships & offers",
+                    style: TextStyle(
+                        fontSize: 48.0,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.red.shade50
+                        // Adjust the font size as needed
+                        ),
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  SizedBox(
+                    width: 20.w,
+                  ),
+                  Transform(
+                      alignment: Alignment.center,
+                      transform: Matrix4.rotationX(
+                          0), // Rotate the mirrored text 180 degrees
+                      child: Text(
+                        "Scholarships & Offers",
+                        style: TextStyle(
+                          fontSize: 24.0,
+                          fontWeight: FontWeight.bold,
+                          color: secondColor,
+                          // Adjust the font size as needed
+                        ),
+                      )),
+                ],
+              ),
+              SizedBox(
+                height: 5.h,
+              ),
+              Row(
+                children: [
+                  SizedBox(
+                    width: 20.w,
+                  ),
+                  Container(
+                    height: 4.h,
+                    width: 50.w,
+                    // margin: EdgeInsets.symmetric(horizontal: 40, vertical: 30),
+                    color: secondColor,
+                  ),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Icon(
+                    Icons.keyboard_arrow_left_outlined,
+                    size: 38,
+                  ),
+                  SizedBox(
+                    width: 10.w,
+                  ),
+                  Icon(
+                    Icons.keyboard_arrow_right_outlined,
+                    size: 38,
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  SizedBox(
+                    width: 10.w,
+                  ),
+                  Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: Container(
+                      height: 30.h,
+                      child: Text(
+                        "Discover how we achieve upto 100% Fee Scholarships to the best international universities for our students. Learn their stories.",
+                        style: TextStyle(
+                            fontSize: 16.sp,
+                            color: Colors.black87,
+                            fontFamily: "Work Sans"),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 5.h,
+              ),
+              carouselEffect(context),
+              gap()
+            ],
+          ),
+        ));
+  }
+
+  Widget carouselEffect(context) {
+    return CarouselSlider(
+        items: images.map((item) {
+          return Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Container(
+                height: 200.h,
+                width: 100.w,
+                color: Colors.red,
+                child: Image.asset(images[indexx], fit: BoxFit.cover),
+              ),
+              Container(
+                  height: 200.h,
+                  width: 100.w,
+                  color: Colors.red,
+                  child: Image.asset(imagess[indexx], fit: BoxFit.cover)),
+              Container(
+                  height: 200.h,
+                  width: 100.w,
+                  color: Colors.red,
+                  child: Image.asset(
+                    images[indexx],
+                    fit: BoxFit.cover,
+                  ))
+            ],
+          );
+        }).toList(),
+        options: CarouselOptions(
+            onPageChanged: (index, reason) {
+              setState(() {
+                indexx = index;
+              });
+            },
+            aspectRatio: 2.0,
+            enlargeCenterPage: true,
+            autoPlay: true,
+            scrollDirection: Axis.horizontal,
+            height: 260.h,
+            autoPlayInterval: const Duration(seconds: 5),
+            viewportFraction: 1));
+  }
+
+  Widget gap() {
+    return Container(
+      height: 150.h,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Row(
-            children: [
-              SizedBox(
-                width: 10.w,
-              ),
-              Text(
-                "Our Service",
-                style: TextStyle(
-                    color: Colors.green,
-                    fontFamily: "Work Sans",
-                    fontSize: 32.sp,
-                    fontWeight: FontWeight.bold),
-              ),
-            ],
-          ),
-          Row(
-            children: [
-              SizedBox(
-                width: 10.w,
-              ),
-              Text(
-                """At Eduvice, we're committed to supporting you throughout every stage of your study abroad processing time, making your dreams of international education a reality""",
-                style: TextStyle(fontSize: 16.sp, color: Colors.black87),
-              ),
-            ],
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Container(
-                height: 170.h,
-                width: 100.w,
-                decoration: const BoxDecoration(
-                  color: Colors.white,
-                  boxShadow: [
-                    BoxShadow(
-                        blurRadius: 0.5, spreadRadius: 0.5, color: Colors.grey)
-                  ],
-                ),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Icon(
-                      Icons.person,
-                      color: secondColor,
-                    ),
-                    Text(
-                      "Personalized Consultation",
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18,
-                          color: colors),
-                    ),
-                    const Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Text(
-                        "Our journey with you begins with a personalized consultation. We take the time to understand your academic aspirations, interests, and preferences. By gaining insights into your goals, we can tailor our services to match your unique study abroad needs.",
-                        style: TextStyle(fontFamily: "Work Sans"),
-                      ),
-                    )
-                  ],
-                ),
-              ),
-              Container(
-                height: 170.h,
-                width: 100.w,
-                decoration: const BoxDecoration(
-                  color: Colors.white,
-                  boxShadow: [
-                    BoxShadow(
-                        blurRadius: 0.5, spreadRadius: 0.5, color: Colors.grey)
-                  ],
-                ),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Icon(
-                      Icons.school,
-                      color: secondColor,
-                    ),
-                    Text(
-                      "University and Program Selection",
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18,
-                          color: colors),
-                    ),
-                    const Padding(
-                      padding: EdgeInsets.all(8.0),
-                      child: Text(
-                        "Based on your preferences and academic background, we assist you in selecting the best-fit universities and study programs. Our extensive network of partner institutions worldwide ensures that you have access to a diverse range of high-quality academic options.",
-                        style: TextStyle(fontFamily: "Work Sans"),
-                      ),
-                    )
-                  ],
-                ),
-              ),
-              Container(
-                height: 170.h,
-                width: 100.w,
-                decoration: const BoxDecoration(
-                  color: Colors.white,
-                  boxShadow: [
-                    BoxShadow(
-                        blurRadius: 0.5, spreadRadius: 0.5, color: Colors.grey)
-                  ],
-                ),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Icon(
-                      Icons.file_upload,
-                      color: secondColor,
-                    ),
-                    Text(
-                      "Application Assistance",
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18,
-                          color: colors),
-                    ),
-                    const Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Text(
-                        "Navigating the application process can be daunting, but we're here to make it seamless. Our team provides comprehensive support, helping you complete application forms, organize necessary documents, and meet deadlines effectively.",
-                        style: TextStyle(fontFamily: "Work Sans"),
-                      ),
-                    )
-                  ],
-                ),
-              )
-            ],
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Container(
-                height: 170.h,
-                width: 100.w,
-                decoration: const BoxDecoration(
-                  color: Colors.white,
-                  boxShadow: [
-                    BoxShadow(
-                        blurRadius: 0.5, spreadRadius: 0.5, color: Colors.grey)
-                  ],
-                ),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Icon(
-                      Icons.support,
-                      color: secondColor,
-                    ),
-                    Text(
-                      "Visa and Documentation Support",
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18,
-                          color: colors),
-                    ),
-                    const Padding(
-                      padding: EdgeInsets.all(8.0),
-                      child: Text(
-                        "Acquiring a student visa can be complex, but worry not – we're here to guide you. Our experts offer assistance in preparing visa documentation, ensuring a smooth process for obtaining the necessary permits to study abroad.",
-                        style: TextStyle(fontFamily: "Work Sans"),
-                      ),
-                    )
-                  ],
-                ),
-              ),
-              Container(
-                height: 170.h,
-                width: 100.w,
-                decoration: const BoxDecoration(
-                  color: Colors.white,
-                  boxShadow: [
-                    BoxShadow(
-                        blurRadius: 0.5, spreadRadius: 0.5, color: Colors.grey)
-                  ],
-                ),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Icon(
-                      Icons.flight,
-                      color: secondColor,
-                    ),
-                    Text(
-                      "Pre-departure Preparation",
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18,
-                          color: colors),
-                    ),
-                    const Padding(
-                      padding: EdgeInsets.all(8.0),
-                      child: Text(
-                        "Before you embark on your journey, we provide comprehensive pre-departure briefings. From travel tips to cultural insights, we ensure you're fully prepared for your new academic adventure, promoting a successful transition to your chosen study destination.",
-                        style: TextStyle(fontFamily: "Work Sans"),
-                      ),
-                    )
-                  ],
-                ),
-              ),
-              Container(
-                height: 170.h,
-                width: 100.w,
-                decoration: const BoxDecoration(
-                  color: Colors.white,
-                  boxShadow: [
-                    BoxShadow(
-                        blurRadius: 0.5, spreadRadius: 0.5, color: Colors.grey)
-                  ],
-                ),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Icon(
-                      Icons.done_all,
-                      color: secondColor,
-                    ),
-                    Text(
-                      "Visa Submission",
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18,
-                          color: colors),
-                    ),
-                    const Padding(
-                      padding: EdgeInsets.all(8.0),
-                      child: Text(
-                        "Get easy access to a guaranteed Dfavo scholarship for successful offer holders.",
-                        style: TextStyle(fontFamily: "Work Sans"),
-                      ),
-                    )
-                  ],
-                ),
-              )
-            ],
+          Container(
+            color: secondColor,
+            width: 50.w,
+            height: 3.h,
           ),
           SizedBox(
-            height: 20.h,
-          )
+            width: 5.w,
+          ),
+          Container(
+            height: 120.h,
+            child: Image.asset(
+              "assets/eduviceIconPiece.png",
+              fit: BoxFit.fill,
+            ),
+          ),
+          SizedBox(
+            width: 5.w,
+          ),
+          Container(
+            color: secondColor,
+            width: 50.w,
+            height: 3.h,
+          ),
         ],
       ),
     );
